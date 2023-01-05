@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+
+{% block title %}My team{% endblock title %}
+{% block body %}
+<style>
+    html {
+      box-sizing: border-box;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+    
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+    
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+    
+    .container::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .title {
+      color: grey;
+    }
+    
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+    
+    .button:hover {
+      background-color: #555;
+    }
+
+    
+
+    
+</style>
+
+
+
+
+{% comment %} image container start.... {% endcomment %}
+<div class="contant">
+<div class="container-fluid px-0">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static\12-04review.webp" class="d-block w-100" alt="slide-01">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 style="color: black"><b>Welcome To WebSell</b></h3>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+</div>
+
+
+{% comment %} image container end..... {% endcomment %}
+<div style="text-align: center">
+  <br>
+  <h2>This is "Meet The Team" Section</h2>
+  <h2> If you have any query and suggestion then you can share with us. </h2>
+  <p>Your Information will be very valuable for us.</p>
+<br>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="static\sumi4.png" alt="Sumit Singh" style="width:100%">
+      <div class="container">
+        <h2>Sumit Singh</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Hiii....
+          i am sumit singh.
+          your time is valuable.
+        </p>
+        <p>you can share your query on websellceo@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static\misha fogat.jpg" alt="Misha" style="width:100%">
+      <div class="container">
+        <h2>Misha singh</h2>
+        <p class="title">Director</p>
+        <p>Hiii....
+          i am misha singh.
+          your time is valuable.
+        </p>
+        <p>you can share your query on webselldirecter@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="static\mike ross.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Designer</p>
+        <p>Hiii....
+          i am Mike Ross.
+          your time is valuable.
+        </p>
+        <p>you can share your query on webselldesignermike@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static\jenny.jpg" alt="Jenny" style="width:100%">
+      <div class="container">
+        <h2>Mrs jenny</h2>
+        <p class="title">Project Manager</p>
+        <p>Hiii....
+          i am Jenny.
+          your time is valuable.
+        </p>
+        <p>you can share your query on websellmanagerjenny@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static\tanisha bhatia.jpg" alt="Tanisha" style="width:100%">
+      <div class="container">
+        <h2>Tanisha Bhatia</h2>
+        <p class="title">Staff member</p>
+        <p>Hiii....
+          i am Tanisha Bhatia.
+          your time is valuable.
+        </p>
+        <p>you can share your query on websellstaff00@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="static\henary.jpg" alt="Henary" style="width:100%">
+      <div class="container">
+        <h2>Henary charls</h2>
+        <p class="title">Staff member</p>
+        <p>Hiii....
+          i am Henary Charls.
+          your time is valuable.
+        </p>
+        <p>you can share your query on webselldestaff01@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="static\Kyle Joss.jpg" alt="kyle joss" style="width:100%">
+      <div class="container">
+        <h2>Kyle Joss</h2>
+        <p class="title">Staff member</p>
+        <p>Hiii....
+          i am Kyle Joss.
+          your time is valuable.
+        </p>
+        <p>you can share your query on websellstaff02@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+{% endblock body %}

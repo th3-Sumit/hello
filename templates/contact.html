@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+
+{% block title %}contact{% endblock title %}
+{% block body %}
+
+<div class="container-fluid px-0 ">
+    <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="static\contact.jpg" class="d-block w-100" alt="slide-01">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 style= "color: black"><b>Welcome To WebSell</b></h2>
+        <p style = "color: red">Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<div class="contact-01 text-center">
+    <h2 class="text-contact">contact</h2>
+</div>
+
+
+<div class="container mb-5 my-8">
+    <form class="row g-3" method="POST" action="/contact">
+    {% csrf_token %}
+        <div class="col-md-6">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" name="name" id="name" Required>
+        </div>
+
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="abc@gmail.com" Required>
+        </div>
+
+        <div class="col-12">
+          <label for="address" class="form-label">Address</label>
+          <input type="text" class="form-control" name="address" id="address" placeholder="" Required>
+        </div>
+
+        <div class="col-12">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="Number" class="form-control" name="phone" id="phone" placeholder="">
+        </div>
+
+        <div class="col-md-6">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" name="city" id="city" Required>
+        </div>
+
+        <div class="col-md-4">
+          <label for="state" class="form-label">State</label>
+          <input type="text" class="form-control" name="state" id="state" Required>
+        </div>
+
+        <div class="col-md-2">
+          <label for="pincode" class="form-label">Pin Code</label>
+          <input type="text" class="form-control" name="pincode" id="pincode" Required >
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck" Required>
+              plz check me out
+            </label>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+</div>
+{% endblock body %}
